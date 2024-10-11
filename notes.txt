@@ -1,0 +1,48 @@
+Purpose:
+This document outlines html structure of chosen websites and under which html tags information is located.  
+
+Scope:
+    Websites:
+    www.target.com
+    www.walmart.com
+    www.heinens.com
+    www.samsclub.com
+    www.amazon.com
+    www.wholefoods.com
+
+    Information:
+    (Product) SKU
+    Name
+    Unit of Measurement (Oz, lbs., grams, qty of pre-packaged item)
+    Purchase Quantity
+    Price Per Purchase Quantity
+
+Future Statement:
+Defining specific html structure to find information is restrictive and not future proof as websites are living.  A more robust application could outline a list of key words and primarily
+search inner text for keywords and structure data recursively.
+
+Structure:
+1. Name Of Website 1 (eg. Target)
+    1.1 "SPECIFIC URL" ("https://www.target.com/?searchTerm=snacks")
+        1.1.1 Information Name Item 1 (eg. SKU)
+            1.1.1.1 HTML Tag Hierarchical Element Top Level
+            1.1.1.2 HTML Tag Hierarchical Element Child Level
+        1.1.2 Information Name Item 2 (eg. Name)
+            1.1.2.1. HTML Tag Hierarchical Element Top Level
+            1.1.2.2. HTML Tag Hierarchical Element Child Level
+    1.2 (eg. "https://www.target.com/?searchTerm=produce")
+2. Name Of Website 2 (eg. Walmart)
+
+Research:
+1. Target
+    1.1 "https://www.target.com/?searchTerm=snacks"
+        1.1.1 All
+            1.1.1.1 <div id="__next"></div>
+            1.1.1.2 <div data-component-title="Product Grid"></div>
+            1.1.1.3 <div data-model-type="ProductListGrid"></div>
+            1.1.1.4 <div data-text="product-grid"></div>
+            1.1.1.5 <div data-test="@web/ProductCard/body"></div>
+            1.1.1.6 <div data-text="product-details"></div>
+
+    
+
